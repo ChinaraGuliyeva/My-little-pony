@@ -1,3 +1,16 @@
 body{
-    background-image: url('./img/pony-pattern.jpg');
+    font-family: 'Balsamiq Sans', cursive;
+    color: #6C006C;
+}
+
+.container{
+    background-color: white;
+   /* background-image: url('./img/pony-pattern.jpg');*/
+    padding: 5px;
+}
+
+.header-container{
+    text-align: center;
+    margin: 40px;
+    border-radius: 10px;
 }

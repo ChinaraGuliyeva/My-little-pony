@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import Homepage from './Homepage';
 
-function App() {
+class App extends Component {
+  render(){
   return (
     <div>
-      Hello
+      <Homepage />
     </div>
-  );
+  )
+  }
 }
 
 export default App;

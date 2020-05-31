@@ -1,11 +1,11 @@
 body{
     font-family: 'Balsamiq Sans', cursive;
-    color: #6C006C;
     /* background-image: url('./img/pony-pattern.jpg');*/
 }
 
 a {
   text-decoration: none;
+  color: #6C006C;
 }
 
 .container{

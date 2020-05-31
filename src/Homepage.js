@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import Header from './Header';
+import Footer from './Footer';
 import HomePagePony from "./HomePagePony";
-import { Link } from 'react-router-dom';
+
 
 const PoniesContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 `;
 
 class Homepage extends Component {
@@ -15,19 +18,19 @@ class Homepage extends Component {
   state = {
     ponies: [
       {
-        link: '/list/Bullion',
-        title: 'Bullion coins',
-        src: 'https://i.postimg.cc/gcBVSZpX/South-Vietnamese-Dong-1.png'
-      },
-      {
         link: '/list/Exclusive',
-        title: 'Exclusive coins',
-        src: 'https://i.postimg.cc/7ZJmMNTZ/ISK-2.png'
+        title: 'Единороги',
+        src: 'https://i.postimg.cc/tRLcwY9w/57c3d0961dea0156d4e6ca6b.png'
       },
       {
         link: '/list/Commemorative',
-        title: 'Commemorative coins',
-        src: 'https://i.postimg.cc/VvNFS981/Looney-1.png'
+        title: 'Земные пони',
+        src: 'https://i.postimg.cc/X7b89Fjj/137661.jpg'
+      },
+      {
+        link: '/list/Commemorative',
+        title: 'Пегасы',
+        src: 'https://i.postimg.cc/Hx1JFwPj/rainbow-dash-dash-with-it-by-mysteriouskaos-d5cu0zq.png'
       }
     ]
   }
@@ -35,10 +38,11 @@ class Homepage extends Component {
   render() {
     const { ponies } = this.state;
     return <div className="container">
-      <Header title="Добро пожаловать в Понивиль" />
+      <Header title="Добро пожаловать в Понивиль!" />
       <PoniesContainer>
         {ponies.map(element => { return <Link to={element.link}><HomePagePony title={element.title} src={element.src} /></Link> })}
       </PoniesContainer>
+      <Footer />
     </div>
   }
 }

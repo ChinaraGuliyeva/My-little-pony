@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 
-class Header extends Component{
-    render(){
-        return<div className='container header-container'>
-            <h1>{this.props.title}</h1>
-            </div>
+import styled from 'styled-components';
+
+const HeaderDiv = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+const Heading = styled.h1`
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+`;
+
+class Header extends Component {
+    render() {
+        return <HeaderDiv>
+            <Heading>{this.props.title}</Heading>
+        </ HeaderDiv>
     }
 }
 

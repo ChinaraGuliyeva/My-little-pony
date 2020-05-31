@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.div`
-    margin-top: 360px;
+    margin-top: 300px;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid pink;

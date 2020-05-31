@@ -18,17 +18,17 @@ class Homepage extends Component {
   state = {
     ponies: [
       {
-        link: '/list/Exclusive',
+        link: '/list/Unicorn',
         title: 'Единороги',
         src: 'https://i.postimg.cc/tRLcwY9w/57c3d0961dea0156d4e6ca6b.png'
       },
       {
-        link: '/list/Commemorative',
+        link: '/list/Earth',
         title: 'Земные пони',
         src: 'https://i.postimg.cc/X7b89Fjj/137661.jpg'
       },
       {
-        link: '/list/Commemorative',
+        link: '/list/Pegasus',
         title: 'Пегасы',
         src: 'https://i.postimg.cc/Hx1JFwPj/rainbow-dash-dash-with-it-by-mysteriouskaos-d5cu0zq.png'
       }

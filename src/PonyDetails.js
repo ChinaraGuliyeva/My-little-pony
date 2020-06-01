@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+
 import img from './img/pony-pattern.jpg';
 
 const Container = styled.div`
@@ -48,7 +49,6 @@ const Title = styled.h1`
 
 const A = styled.div`
     color: white;
-    margin: 20px 0 0;
 `;
 
 class CoinDetails extends Component {
@@ -67,7 +67,8 @@ class CoinDetails extends Component {
     }
     render() {
         const { pony } = this.state;
-        return <Container>
+        return <div>
+        <Container>
             <div>
                 <Pony src={pony.img} alt="Пони" />
             </div>
@@ -93,11 +94,11 @@ class CoinDetails extends Component {
                         </tr>
                     </table>
                     <Text>{pony.description}</Text>
-                    
                 </div>
                 <Link to={`/list/${pony.type}`}><A>Назад к списку</A></Link>
             </DescriptionContainer>
         </Container>
+        </div>
     }
 }
 

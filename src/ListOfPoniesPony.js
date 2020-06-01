@@ -19,14 +19,13 @@ const PonyTitle = styled.h1`
     font-weight: bold;
     font-size: 30px;
     line-height: 19px;
-    color: #833AE0;
 `;
 
 class ListOfPoniesPony extends Component {
     render() {
         return <PonyContainer>
             <PonyTitle>{this.props.title}</PonyTitle>
-            <Pony src={this.props.src} alt="Монета"/>
+            <Pony src={this.props.src} alt="Пони"/>
         </PonyContainer>
     }
 }

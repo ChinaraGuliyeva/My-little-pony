@@ -32,7 +32,7 @@ class ListOfPonies extends Component {
         return <div className="container">
             <Header title='Список пони' />
             <PoniesContainer>
-                {ponies.map(element => {return <Link to={`/coin/${element.id}`} className="coin-title"><ListOfPoniesPony title={element.name} src={element.img} /></Link>})}
+                {ponies.map(element => {return <Link to={`/pony/${element.id}`} className="coin-title"><ListOfPoniesPony title={element.name} src={element.img} /></Link>})}
             </PoniesContainer>
             <Footer />
         </div>

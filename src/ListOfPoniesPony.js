@@ -5,14 +5,13 @@ const PonyContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    width: 700px;
+    width: 600px;
 `;
 
 const Pony = styled.img`
     display: block;
     width: 200px;
     height: 200px;
-    margin-right: 30px;
 `;
 
 const PonyTitle = styled.h1`

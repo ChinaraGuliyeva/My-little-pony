@@ -8,7 +8,7 @@ import ListOfPoniesPony from './ListOfPoniesPony';
 const PoniesContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin-top: 150px
+    margin-top: 50px;
 `;
 
 class ListOfPonies extends Component {

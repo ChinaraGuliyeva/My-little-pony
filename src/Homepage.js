@@ -17,6 +17,11 @@ class Homepage extends Component {
   state = {
     ponies: [
       {
+        link: '/list/Alicorn',
+        title: 'Аликорны',
+        src: 'https://i.postimg.cc/kG80c6mt/twilight-sparkle-flying-off-by-andoanimalia-dchpvqp-fullview.png'
+      },
+      {
         link: '/list/Unicorn',
         title: 'Единороги',
         src: 'https://i.postimg.cc/tRLcwY9w/57c3d0961dea0156d4e6ca6b.png'
@@ -37,7 +42,7 @@ class Homepage extends Component {
   render() {
     const { ponies } = this.state;
     return <div className="container">
-      <Header title="Добро пожаловать в Понивиль!" />
+      <Header title="Добро пожаловать в Эквестрию!" />
       <PoniesContainer>
         {ponies.map(element => { return <Link to={element.link}><HomePagePony title={element.title} src={element.src} /></Link> })}
       </PoniesContainer>

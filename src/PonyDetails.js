@@ -71,7 +71,7 @@ class CoinDetails extends Component {
             return "земные пони"
         }
         if(this.state.pony.type=='Alicorn'){
-            return "Аликорн"
+            return "аликорн"
         }
         if(this.state.pony.type=='Pegasus'){
             return "пегас"

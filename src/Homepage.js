@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import Header from './Header';
-import Footer from './Footer';
 import HomePagePony from "./HomePagePony";
 
 
@@ -42,7 +41,6 @@ class Homepage extends Component {
       <PoniesContainer>
         {ponies.map(element => { return <Link to={element.link}><HomePagePony title={element.title} src={element.src} /></Link> })}
       </PoniesContainer>
-      <Footer />
     </div>
   }
 }

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import Header from './Header';
 import ListOfPoniesPony from './ListOfPoniesPony';
-import Footer from './Footer';
 
 const PoniesContainer = styled.div`
     display: flex;
@@ -34,7 +33,6 @@ class ListOfPonies extends Component {
             <PoniesContainer>
                 {ponies.map(element => {return <Link to={`/pony/${element.id}`} className="coin-title"><ListOfPoniesPony title={element.name} src={element.img} /></Link>})}
             </PoniesContainer>
-            <Footer />
         </div>
     }
 }

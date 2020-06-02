@@ -55,6 +55,28 @@ class CoinDetails extends Component {
     state = {
         pony: ''
     }
+    gender =()=>{
+        if(this.state.pony.gender=='female'){
+            return "женский"
+        }
+        else {
+            return "мужской"
+        }
+    }
+    type = () => {
+        if(this.state.pony.type=='Unicorn'){
+            return "единорог"
+        }
+        if(this.state.pony.type=='Earth'){
+            return "земные пони"
+        }
+        if(this.state.pony.type=='Alicorn'){
+            return "Аликорн"
+        }
+        if(this.state.pony.type=='Pegasus'){
+            return "пегас"
+        }
+    }
     componentDidMount() {
         const id = this.props.match.params.id;
         fetch('http://localhost:3001/ponies')
@@ -78,7 +100,11 @@ class CoinDetails extends Component {
                     <table>
                         <tr>
                             <td>Пол</td>
-                            <td>{pony.gender}</td>
+                            <td>{this.gender()}</td>
+                        </tr>
+                        <tr>
+                            <td>Тип</td>
+                            <td>{this.type()}</td>
                         </tr>
                         <tr>
                             <td>Знак отличия</td>

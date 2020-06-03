@@ -6,7 +6,7 @@ import Header from './Header';
 import MainSearch from './MainSearch';
 import ListOfPoniesPony from './ListOfPoniesPony';
 
-const CoinsContainer = styled.div`
+const PoniesContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
 `;
@@ -34,9 +34,9 @@ class SearchResultList extends Component {
         return <div className="container">
             <Header title="Результаты поиска" />
             <MainSearch />
-            <CoinsContainer>
+            <PoniesContainer>
                 {ponies.map(element => {return <Link to={`/pony/${element.id}`} className="coin-title"><ListOfPoniesPony title={element.name} src={element.img} /></Link>})}
-            </CoinsContainer>
+            </PoniesContainer>
         </div>
     }
 }

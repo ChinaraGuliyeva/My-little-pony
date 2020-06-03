@@ -12,7 +12,7 @@ class HomePagePony extends Component {
     render() {
         return <div>
                     <h1>{this.props.title}</h1>
-                    <Pony src={this.props.src} alt="Монета"/>
+                    <Pony src={this.props.src} alt="Пони"/>
             </div>
     }
 }

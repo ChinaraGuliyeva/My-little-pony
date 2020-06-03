@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 
 import Header from './Header';
 import HomePagePony from "./HomePagePony";
+import MainSearch from "./MainSearch";
 
 
 const PoniesContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 20px;
 `;
 
 class Homepage extends Component {
@@ -43,6 +44,7 @@ class Homepage extends Component {
     const { ponies } = this.state;
     return <div className="container">
       <Header title="Добро пожаловать в Эквестрию!" />
+      <MainSearch />
       <PoniesContainer>
         {ponies.map(element => { return <Link to={element.link}><HomePagePony title={element.title} src={element.src} /></Link> })}
       </PoniesContainer>
